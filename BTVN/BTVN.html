@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+   let so1 = +prompt("Nhap vao so lon 1");
+   let so2 = +prompt("nhap vao so thu 2");
+   let so3 = +prompt("nhap vao so thu 3");
+
+   if ( so1===so2 && so1===so3){
+       alert("ba so bang nhau");
+   } else if(so1 >= so2 && so1>=so3)
+       if ( so1 === so2 ){
+           alert("so1 va so2 la so lon nhat");
+   }
+       else {
+           alert("so1 va so3 la so lon nhat");
+       }
+       else if (so2>so3){
+           alert("so lon nhat la so2 va so3");
+   }
+       else if (so2<so3){
+           alert("so lon nhat la so1 va so3");
+   } else {
+           alert("so lon nhat la so2 va so3")
+   }
+</script>
+</body>
+</html>
