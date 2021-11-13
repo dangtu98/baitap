@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let toan = parseFloat(prompt("nhap diem toan"))
+    let ly   = parseFloat(prompt("nhap diem ly"))
+    let hoa  = parseFloat(prompt("nhap diem hoa"))
+    let diemtb =  (toan + ly + hoa)/3
+    if(diemtb <= 9 && diemtb == 10) {
+        alert(" xếp Loại A ");
+    }  if( 7<=diemtb && diemtb<=8.5){
+         alert("xep loai B");
+    }else {
+        alert("xep loai C")
+    }
+
+</script>
+</body>
+</html>
