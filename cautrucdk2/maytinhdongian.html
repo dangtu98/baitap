@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+     <input type="text" id="so1">
+     <input type="text" id="so2">
+      <br/>
+      <br/>
+      <input type="button" value="cong" onclick="cong()">
+      <input type="button" value="tru" onclick="tru()">
+      <input type="button" value="nhan" onclick="nhan()">
+      <input type="button" value="chia" onclick="chia()">
+<p id="result">Result:</p>
+</body>
+      <script>
+          function cong() {
+              let so1 = parseInt(document.getElementById("so1").value)
+              let so2 = parseInt(document.getElementById("so2").value)
+              let result = so1 + so2
+              document.getElementById("result").innerHTML="result:" + result
+          }
+
+          function tru() {
+              let so1 = parseInt(document.getElementById("so1").value)
+              let so2 = parseInt(document.getElementById("so2").value)
+              let result = so1 - so2
+              document.getElementById("result").innerHTML="result:" + result
+          }
+
+          function nhan() {
+              let so1 = parseInt(document.getElementById("so1").value)
+              let so2 = parseInt(document.getElementById("so2").value)
+              let result = so1 * so2
+              document.getElementById("result").innerHTML="result:" + result
+          }
+
+
+          function chia() {
+              let so1 = parseInt(document.getElementById("so1").value)
+              let so2 = parseInt(document.getElementById("so2").value)
+              let result = so1 / so2
+              document.getElementById("result").innerHTML="result:" + result
+          }
+
+      </script>
+</html>
