@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> Game Chơi là thua - Không chơi là thắng  </h1>
+<button id="submit" value="choigame" onclick="game()">Chơi Game</button>
+</body>
+<script>
+    function game(){
+            let number1;
+            let number2;
+          do {
+              number1 = +prompt("nhập số từ 1-100 :")
+              number2 = Math.round(100*Math.random())
+              if (number1 == number2){
+                  alert("you win")
+                  break;
+              }else{
+                  alert(" not win " + " " + number2)
+              }
+          }while (number1)
+
+
+    }
+</script>
+</html>
