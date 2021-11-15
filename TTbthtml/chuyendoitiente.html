@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <form>
+      <p>Nhập</p>
+      <input type="text" id="input">
+      <p>From</p>
+      <select id="from1">
+          <option value="1">Việt Nam</option>
+          <option value="23000">USA</option>
+      </select>
+      <p>To</p>
+      <select id="to">
+          <option value="23000">USD</option>
+          <option value="1">Vietnam</option>
+      </select>
+
+      <input type="button" value="Doitien" onclick="changeMoney()">
+      <p id="result">Result :</p>
+  </form>
+    <script>
+        function changeMoney() {
+            let input = ParseInt(document.getElementById("input").value)
+            let from1 = ParseInt(document.getElementById("from").value)
+            let to    = ParseInt(document.getElementById("to").value)
+
+            document.getElementById("result").innerHTML="Result :" + (input * from1 / to)
+
+        }
+    </script>
+</body>
+</html>

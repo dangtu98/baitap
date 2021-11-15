@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="docReady()">
+<img id="khabanh" src="https://cntt.tv/wp-content/uploads/2020/09/photo-4-1554520397327381325995.gif" style="position:absolute;left:0; top:0;" width="300px" height="300px">
+</body>
+<script>
+    // xử lý khi nhấn phím lên
+    function upArrowPressed() {
+        let element = document.getElementById("khabanh");
+        element.style.top = parseInt(element.style.top) - 5 + 'px';
+    }
+    // xử lý khi ấn phim xuống
+    function downArrowPressed() {
+        var element = document.getElementById("khabanh");
+        element.style.top = parseInt(element.style.top) + 5 + 'px';
+    }
+    // xử lý ấn phím sang trái
+    function leftArrowPressed() {
+        var element = document.getElementById("khabanh");
+        element.style.left = parseInt(element.style.left) - 5 + 'px';
+    }
+    // xử lý phím sang phải
+    function rightArrowPressed() {
+        var element = document.getElementById("khabanh");
+        element.style.left = parseInt(element.style.left) + 5 + 'px';
+
+    }
+    // xử lý hàm nhận các phím
+    function moveSelection(evt) {
+        switch (evt.keyCode) {
+            case 37:
+                leftArrowPressed();
+                break;
+            case 39:
+                rightArrowPressed();
+                break;
+            case 38:
+                upArrowPressed();
+                break;
+            case 40:
+                downArrowPressed();
+                break;
+
+        }
+    }
+    // xử lý hàm doReady
+    function docReady() {
+        window.addEventListener('keydown', moveSelection);
+    }
+</script>
+</html>
