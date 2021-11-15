@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let number = +prompt('Nhập số lượng số nguyên tố cần in:');
+    let count = 0;
+    let N = 2;
+    let data = "";
+    for (; count < number; ) {
+        let flag = 1;
+        for (let i = 2; i < N; i++) {
+            if (N % i === 0) {
+                flag = 0;
+                break;
+</script>
 </body>
 </html>

@@ -1,10 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
+<style>
+    table,tr,td{
+        border: aqua 3px solid;
+        border-collapse: collapse;
+    }
+</style>
 <body>
-$END$
+<script>
+    let sout;
+    let i;
+    let j;
+    sout = "<table>"
+    for ( i = 1 ; i <=10 ; i++ ){
+        sout = sout + "<tr>";
+        for ( j = 1 ; j <=10 ; j++){
+            sout = sout + "<td>" + i + "x" + j + "=" + i*j + "</td>";
+        }
+        sout = sout + "</tr>";
+    }
+    sout = sout + "</table>";
+    document.write(sout)
+</script>
 </body>
 </html>
