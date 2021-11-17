@@ -1,10 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
 </body>
+<script>
+    let eng = [ "hello" , "bye", "hi"];
+    let vn  = ["xin chào", "tạm biệt" , "chào"];
+    let index = -1
+    function kiemtra() {
+        let put = prompt("nhap vao tu can tim")
+        for (let i = 0; i < eng.length; i++) {
+            if (eng[i] == put) {
+                index = i
+            }
+        }
+        if (index != -1) {
+            alert(vn[index])
+        } else {
+            alert("không tìm thấy ")
+        }
+    }
+    kiemtra()
+
+
+</script>
 </html>
