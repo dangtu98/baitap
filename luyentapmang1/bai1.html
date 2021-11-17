@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+  // let num = +prompt("nhập vào số lượng ptu của mảng");
+  // let array = new Array(num)
+  // for ( let i = 0 ; i < array.length ; i ++){
+  //     array[i] = +prompt("nhập vào ptu thứ" + (i+1) + ":")
+  // }
+
+  let number = [1,2,3,4,5,6,7,10,50,60];
+  let max = 0
+  for ( let i = 0 ; i < number.length ; i++){
+        if (number[i] >= 10)
+         max = max + number[i]
+  }
+  document.write(max)
+
+
+
+</script>
 </body>
 </html>

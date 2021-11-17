@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let number = [-1,-2,3,4,5,6,7,10,50,60];
+    let input  = +prompt("nhập vào số")
+    let flag   = false
+    for (let i = 0 ; i < number.length; i++){
+        if (number[i] === input){
+            flag = true
+        }
+    }
+    if (flag){
+        alert(input)
+    }else {
+        alert("không nằm trong chuỗi")
+    }
+
+
+</script>
 </body>
 </html>
