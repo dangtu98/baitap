@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = +prompt("nhập phần tử")
+    let arr = new Array(number)
+    for(let i = 0 ; i < arr.length ; i++){
+        arr[i] = +prompt("nhập phần tử n " + (i +1) + ":")
+        if (arr[i] % 3 === 0){
+            document.write( "<br/>" + arr[i] )
+        }else {
+            alert("-1")
+        }
+    }
+</script>
+</body>
+</html>

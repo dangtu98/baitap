@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = []
+    let number = 2
+    let sum = 0
+    for ( let count = 0 ; count < 200 ;  ){
+        let check = true
+        for (let i = 2 ; i < number ; i++){
+            if (number % i === 0){
+                check = false;
+                break;
+            }
+        }if (check){
+            count ++;
+            arr.push(number)
+        }
+        number++ ;
+    }
+    document.write(arr + "<br/>")
+
+ function tinhtong(){
+        sum = sum + number
+     document.write("tổng 200 số nguyên tố :" + sum)
+ }
+    tinhtong()
+</script>
+</body>
+</html>
