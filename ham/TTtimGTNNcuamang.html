@@ -1,10 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+
+          //  arr1 = [3, 5, 1, 8, -3, 7, 8]
+          // arr2 =  [7, 12, 6, 9, 20, 56, 89]
+          //
+          // arr=  []
+          //
+          // arr4 = [0, 0, 0, 0, 0, 0]
+
+          function minArr(arr){
+             let min = arr[0]
+              for (let i = 0 ; i < arr.length ; i++){
+                  if (arr[i] < min){
+                      min = arr[i]
+                  }
+              }
+              return min ;
+          }
+          let arr1 = [3, 5, 1, 8, -3, 7, 8]
+          let min1 = minArr(arr1)
+          document.write(min1 + "<br/>")
+
+          let arr2 = [ 7, 12, 6, 9, 20, 56, 89 ]
+          let min2 = minArr(arr2)
+          document.write(min2 + "<br/>")
+
+          let arr3 = []
+          let min3 = minArr(arr3)
+          document.write(min3  + "<br/>")
+
+          let arr4 = [0, 0, 0, 0, 0, 0]
+          let min4 = minArr(arr4)
+          document.write(min4)
+
+
+
+</script>
 </body>
 </html>
