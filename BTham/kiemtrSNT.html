@@ -1,10 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let number = +prompt("nhập number")
+    function isPrime(num){
+          if (num < 2){
+              return false
+          }else {
+              for(let i = 2 ; i <= Math.sqrt(num) ; i++ ){
+                  if ( num % i === 0){
+                      return false ;
+                  }
+              }
+              return true
+          }
+
+    }
+
+    if (isPrime(number)){
+        alert(number + "là số nguyên tố")
+    }else {
+        alert(number + "không phải là số nguyên tố" )
+    }
+
+
+</script>
 </body>
 </html>

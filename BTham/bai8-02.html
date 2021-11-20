@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+ <script>
+     let number = +prompt("nhập số")
+     let arr = new Array(number)
+     for (let i = 0 ; i < arr.length ; i++){
+         arr[i] = +prompt("nhập phần tử trong mảng" + (i+1) + ":")
+     }
+     function chage(array){
+         array.reverse(number)
+     }
+     chage(arr)
+document.write(arr)
+ </script>
 </body>
 </html>

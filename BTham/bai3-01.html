@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<p>nhập vào số a </p>
+<input type="text" oninput="nhapso(+this.value)">
+<p> số a tăng lên 1 : <span id ="num2"></span></p>
+<script>
+  function nhapso(num){
+    document.getElementById("num2").innerHTML = num+1
+  }
+
+</script>
 </body>
 </html>

@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let num1 = +prompt("nhap so 1")
+    let num2 = +prompt("nhap so 2")
+    function chage(so1,so2){
+        let temp;
+        temp = so1;
+        so1 = so2;
+        so2 = temp;
+        document.write("số thứ nhất " + so1)
+        document.write("<br/>")
+        document.write("số thứ hai " + so2)
+    }
+    chage(num1,num2)
+</script>
 </body>
 </html>

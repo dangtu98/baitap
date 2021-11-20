@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let arr = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus" ]
+    let arr1 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"]
+    let input = prompt("nhập tên ngôi sao")
+    function star(name){
+        let check = false
+        for (let i = 0 ; i < arr.length ; i++){
+            if (name === arr[i]){
+                alert("sao " + arr1[i])
+                check = true
+            }
+        }
+        if(!check){
+            alert("không thuộc chòm sao")
+        }
+    }
+    star(input)
+</script>
 </body>
 </html>

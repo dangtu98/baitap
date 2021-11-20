@@ -1,10 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<h4>chuyển đổi từ feet sang meter</h4>
+<label>Feet<input id ="ft" type="number" placeholder="feet" oninput="footTomester(this.value)" onchange="footTomester(this.value)"></label>
+</br>
+<p>mester : <span id = "mts" ></span></p>
+</br>
+<label>mester<input id ="mt" type="number" placeholder="mester" oninput="meetTofeet(this.value)" onchange="meetTofeet(this.value)"></label>
+<p>Feet : <span id = "fts"></span></p>
+
 </body>
+<script>
+    function footTomester(change){
+        change = parseFloat(change)
+        document.getElementById("mts").innerHTML = (change) * 0.305
+    }
+    function meetTofeet(change1){
+        change1 = parseFloat(change1)
+        document.getElementById("fts").innerHTML = (change1) * 3.279
+    }
+</script>
 </html>

@@ -6,28 +6,33 @@
 </head>
 <body>
 <script>
-    let number = +prompt("nhập số : ")
-    let arr    = []
-     function ischeck(num){
-        for (let count = 0 ; count < 10 ;) {
-            check = true
-
-            for (let i = 0; i < num; i++) {
-                if (num % 2 !== 0) {
-                    check = false;
-                    break;
-                }
-            }
-            if (check) {
-                count++
-                arr.push(num)
-            }
-            num++
-        }
-        return arr
+    let arr    = [];
+    let count = 0;
+     function isCheck(num){
+         for (let i = 0; i < 999; i++) {
+             if (num % 2 === 0) {
+                 return true;
+             } else {
+                 return false;
+             }
+         }
     }
-    console.log(ischeck(number))
-    document.write(ischeck(number))
+    function add() {
+         for (let i=0; i < 999; i++ ) {
+             number = +prompt('Input number: ')
+             if (isCheck(number)) {
+                 count++;
+                 alert('So luong so chan la: ' + count)
+                 arr.push(number);
+                 alert(arr);
+             }
+         }
+         if (arr.length === 10) {
+             return arr;
+         }
+    }
+    document.write(add())
+
 </script>
 </body>
 </html>

@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let number = +prompt("nhap vao 1 so")
+    function isInteger(num){
+        if (num > 0){
+            return true
+        }else {
+            alert("không phải số nguyên dương")
+        }
+
+    }
+    let num2 = isInteger(number)
+    document.write(num2)
+</script>
 </body>
 </html>
