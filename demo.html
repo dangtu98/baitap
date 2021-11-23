@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id = "game">
+    <img src="https://genk.mediacdn.vn/2019/4/6/photo-4-1554520397327381325995.gif">
+</div>
+<script>
+    class Hero {
+        image
+        top
+        left
+        size
+
+        constructor(image, top, left, size) {
+            this.image = image
+            this.top = top
+            this.left = left
+            this.size = size
+        }
+
+        getHeroElement() {
+            return '<img width="' + this.size + '"' +
+                ' height="' + this.size + '"' +
+                ' src="' + this.image + '"' +
+                ' style="top: ' + this.top + 'px; left:' + this.left + 'px;position:absolute;" />';
+        }
+
+        getMoveRight() {
+            return this.left += 20
+        }
+        getMoveDown(){
+            return this.top += 20
+        }
+        getMoveLeft(){
+            return this.left -=20
+        }
+        getMoveUp(){
+            return this.top -= 20
+        }
+    }
+
+    let hero = new Hero("https://genk.mediacdn.vn/2019/4/6/photo-4-1554520397327381325995.gif", 20, 30, 200);
+
+    function start() {
+        if (hero.left < window.innerWidth - hero.size) {
+            hero.getMoveRight();
+        }
+        document.getElementById('game').innerHTML = hero.getHeroElement();
+        setTimeout(start, 100)
+        // if (hero.left < window.innerWidth - hero.size) {
+        //     hero.getMoveDown();
+        //
+        // }
+        // document.getElementById('game').innerHTML = hero.getHeroElement();
+        // setTimeout(start, 100)
+        // if (hero.left < window.innerWidth - hero.size) {
+        //     hero.getMoveLeft();
+        // }
+        // document.getElementById('game').innerHTML = hero.getHeroElement();
+        // setTimeout(start, 100)
+        // if (hero.left < window.innerWidth - hero.size) {
+        //     hero.getMoveUp();
+        // }
+        // document.getElementById('game').innerHTML = hero.getHeroElement();
+        // setTimeout(start, 100)
+    }
+
+    start();
+</script>
+</body>
+</html>
