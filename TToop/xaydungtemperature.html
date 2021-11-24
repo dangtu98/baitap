@@ -1,10 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    class temperature{
+        doC
+        constructor(doC) {
+            this.doC = doC
+        }
+        getDoC(){
+            return this.doC
+        }
+        getDoF(){
+            return [9/5 * this.doC + 32]
+        }
+        getKevin(){
+            return (this.doC + 273.15)
+        }
+    }
+    let temperature1 = new temperature(25)
+    document.write("do C la " + temperature1.getDoC() + "<br/>")
+    document.write("do F la " + temperature1.getDoF() + "<br/>")
+    document.write("do kevin la " + temperature1.getKevin())
+</script>
 </body>
 </html>
